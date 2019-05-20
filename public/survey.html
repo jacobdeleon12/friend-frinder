@@ -21,12 +21,12 @@
           <div class="form-row">
             <div class="col-md-4 mb-3">
               <label for="validationServer01">Full Name</label>
-              <input type="text" class="form-control " id="validationServer01" placeholder="Full Name" required>
+              <input type="text" class="form-control " id="name" placeholder="Full Name" required>
             
             </div>
             <div class="col-md-4 mb-3">
               <label for="validationServer02">Link to Your Photo</label>
-              <input type="text" class="form-control"  id="validationServer02" placeholder="Link to Your Photo" required>
+              <input type="text" class="form-control"  id="photo" placeholder="Link to Your Photo" required>
             </div>
           </div>
         </form>
@@ -36,7 +36,7 @@
     <h4>Question #1</h1>
     <h6>Do you like long Walks on the beach?</h4>
     <br>
-      <select class="custom-select custom-select-lg mb-3" id="">
+      <select class="custom-select custom-select-lg mb-3" id="question1">
           <option selected>Open this select menu</option>
           <option value="1">One (Least Agree)</option>
           <option value="2">Two</option>
@@ -50,7 +50,7 @@
     <h4>Question #2</h1>
     <h6>Do you like like to travel?</h4>
     <br>
-      <select class="custom-select custom-select-lg mb-3" id="">
+      <select class="custom-select custom-select-lg mb-3" id="question2">
           <option selected>Open this select menu</option>
           <option value="1">One (Least Agree)</option>
           <option value="2">Two</option>
@@ -64,7 +64,7 @@
     <h4>Question #3</h1>
     <h6>Do you like Ice Cream?</h4>
     <br>
-      <select class="custom-select custom-select-lg mb-3" id="">
+      <select class="custom-select custom-select-lg mb-3" id="question3">
           <option selected>Open this select menu</option>
           <option value="1">One (Least Agree)</option>
           <option value="2">Two</option>
@@ -78,7 +78,7 @@
     <h4>Question #4</h1>
     <h6>Do you like the TV show "The Office"</h4>
     <br>
-      <select class="custom-select custom-select-lg mb-3" id="">
+      <select class="custom-select custom-select-lg mb-3" id="question4">
           <option selected>Open this select menu</option>
           <option value="1">One (Least Agree)</option>
           <option value="2">Two</option>
@@ -92,7 +92,7 @@
     <h4>Question #5</h1>
     <h6>Do you like Summer?</h4>
     <br>
-      <select class="custom-select custom-select-lg mb-3" id="">
+      <select class="custom-select custom-select-lg mb-3" id="question5">
           <option selected>Open this select menu</option>
           <option value="1">One (Least Agree)</option>
           <option value="2">Two</option>
@@ -106,7 +106,7 @@
     <h4>Question #6</h1>
     <h6>Do you like Swimming?</h4>
     <br>
-      <select class="custom-select custom-select-lg mb-3" id="">
+      <select class="custom-select custom-select-lg mb-3" id="question6">
           <option selected>Open this select menu</option>
           <option value="1">One (Least Agree)</option>
           <option value="2">Two</option>
@@ -120,7 +120,7 @@
     <h4>Question #7</h1>
     <h6>Do you like Computers?</h4>
     <br>
-      <select class="custom-select custom-select-lg mb-3" id="">
+      <select class="custom-select custom-select-lg mb-3" id="question7">
           <option selected>Open this select menu</option>
           <option value="1">One (Least Agree)</option>
           <option value="2">Two</option>
@@ -134,7 +134,7 @@
     <h4>Question #8</h1>
     <h6>Do you like your job?</h4>
     <br>
-      <select class="custom-select custom-select-lg mb-3" id="">
+      <select class="custom-select custom-select-lg mb-3" id="question8">
           <option selected>Open this select menu</option>
           <option value="1">One (Least Agree)</option>
           <option value="2">Two</option>
@@ -148,7 +148,7 @@
     <h4>Question #9</h1>
     <h6>Do you like your family?</h4>
     <br>
-      <select class="custom-select custom-select-lg mb-3" id="">
+      <select class="custom-select custom-select-lg mb-3" id="question9">
           <option selected>Open this select menu</option>
           <option value="1">One (Least Agree)</option>
           <option value="2">Two</option>
@@ -162,7 +162,7 @@
     <h4>Question #10</h1>
     <h6>Do you like Washington?</h4>
     <br>
-      <select class="custom-select custom-select-lg mb-3" id="">
+      <select class="custom-select custom-select-lg mb-3" id="question10">
           <option selected>Open this select menu</option>
           <option value="1">One (Least Agree)</option>
           <option value="2">Two</option>
@@ -172,7 +172,7 @@
       </select>
       
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="submit">
         Find Your Friend
       </button>
       <br>
@@ -203,5 +203,67 @@
   </div>
 </body>
 </html>
-<script text="javascrpt">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+
+// valadation
+var newFriend = {};
+
+$("#submit").on("click", function(event){
+  event.preventDefault();
+
+  function valadation(){
+    var compleated = true;
+
+    $(".form-control").each(function(){
+      if ($(this).val() === "") {
+        compleated = false;
+      }
+    });
+
+    $(".custom-select").each(function(){
+      if ($(this).val() === "") {
+        compleated = false;
+      }
+    });
+    return compleated;
+  }
+
+  if (valadation()) {
+      var newFriend = {
+        name: $("#name").val().trim(),
+        photo: $("#photo").val().trim(),
+        scores:[
+          $("#question1").val().trim(),
+          $("#question2").val().trim(),
+          $("#question3").val().trim(),
+          $("#question4").val().trim(),
+          $("#question5").val().trim(),
+          $("#question6").val().trim(),
+          $("#question7").val().trim(),
+          $("#question8").val().trim(),
+          $("#question9").val().trim(),
+          $("#question10").val().trim(),
+        ]
+      }
+      console.log(newFriend);
+      model();
+  }
+  else{
+    $(".modal-body").text("Please fill out all boxes!");
+    $("#exampleModal").modal("toggle");
+  }
+  
+});
+    function model() {
+      
+        $(".modal-body").text("This worked");
+        $("#exampleModal").modal("toggle");
+        
+        
+      }
+
+
 </script>
