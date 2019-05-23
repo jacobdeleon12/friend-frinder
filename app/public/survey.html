@@ -197,6 +197,7 @@
              <img style="height: 200px;" style="width: 150px;" class="modal-img" src="" alt="">
             </div>
             <div class="modal-footer">
+                <a href="/api/friends">Api/Friends</a>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           </div>
@@ -238,8 +239,8 @@ $("#submit").on("click", function(event){
   }
 
   if (valadation()) {
-      var newFriend = {
-        name: $("#name").val().trim(),
+      var newFriend = [
+      { name: $("#name").val().trim(),
         photo: $("#photo").val().trim(),
         scores:[
           $("#question1").val().trim(),
@@ -252,8 +253,8 @@ $("#submit").on("click", function(event){
           $("#question8").val().trim(),
           $("#question9").val().trim(),
           $("#question10").val().trim(),
-        ]
-      }
+        ]}
+      ]
       console.log(newFriend);
       model();
   }

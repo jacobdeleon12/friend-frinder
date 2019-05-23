@@ -13,7 +13,7 @@ module.exports = function(app) {
 
   app.post("/api/friends", function(req, res) {
    
-    // var newFriend = req.body;
+    var newFriend = req.body;
     // var newFriendScores = newFriend.scores;
     // var difference = 0;
     // var bestFriend = 0;
@@ -32,9 +32,9 @@ module.exports = function(app) {
     //     }
     //   }
     // }
-    // friends.push(newFriend);
     // res.json(friends[bestFriend]);
     res.json(friends[0]);
+    friends.push(newFriend);
   });
  
  };
