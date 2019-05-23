@@ -191,7 +191,9 @@
               </button>
             </div>
             <div class="modal-body">
-              
+              <p>Your new best Friend:</p>
+              <p class="friend-name"></p>
+              <br>
              <img style="height: 200px;" style="width: 150px;" class="modal-img" src="" alt="">
             </div>
             <div class="modal-footer">
@@ -274,10 +276,12 @@ $("#submit").on("click", function(event){
 
       $.post("/api/friends", newFriend, function(res){
         console.log(res);
-        $(".modal-body").empty();
-        $(".modal-body").text(res.name);
+        // $(".modal-body").empty();
+        $(".friend-name").text(res.name);
         var photo = $("<img>").attr("src", res.photo);
         $(".modal-body").append(photo);
+        $("img").css("width", "300px");
+        $("img").css("height", "300px");
         $("#exampleModal").modal("toggle");
       });
       
